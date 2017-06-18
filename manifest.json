@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Block It!",
+  "version": "0.1.0",
+  "description": "Block distracting sites",
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.facebook.com/*", "https://www.youtube.com/*", "http://www.nfl.com/*", "https://www.amazon.com/*", "https://www.wikipedia.com/*"]
+  }]
+
+}
